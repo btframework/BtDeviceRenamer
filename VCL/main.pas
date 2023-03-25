@@ -63,7 +63,7 @@ function BluetoothUpdateDeviceRecord(
 procedure TfmMain.FormCreate(Sender: TObject);
 begin
   BluetoothManager.Open;
-  if BluetoothManager.GetClassicRadio(FRadio) <> wclErrors.WCL_E_SUCCESS then
+  if BluetoothManager.GetClassicRadio(FRadio) <> WCL_E_SUCCESS then
     FRadio := nil;
 end;
 
