@@ -167,14 +167,13 @@ namespace BtDeviceRenamer
                             lvDevices.SelectedItems[0].SubItems[1].Text = Name;
 
                             // We need to re-enable Bluetooth so name will be refreshed.
-
                             if (FRadio.TurnOff() == wclErrors.WCL_E_SUCCESS)
                             {
                                 if (FRadio.TurnOn() != wclErrors.WCL_E_SUCCESS)
                                     MessageBox.Show("Enable Bluetooth.");
                             }
 
-                            MessageBox.Show("Name changed, refresh list");
+                            MessageBox.Show("Name changed!");
                         }
                     }
                 }
